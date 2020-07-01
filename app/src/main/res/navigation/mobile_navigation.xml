@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_topstories">
+
+    <fragment
+        android:id="@+id/nav_topstories"
+        android:name="aldyputra.hackernews.fragment.HomeFragment"
+        android:label="@string/menu_topstories"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_topstories_to_nav_story"
+            app:destination="@id/nav_story" />
+
+        <argument
+            android:name="arg_view_stories"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_item"
+        android:name="aldyputra.hackernews.fragment.ItemFragment"
+        android:label="Item"
+        tools:layout="@layout/viewpager_item"
+        />
+
+    <fragment
+        android:id="@+id/nav_story"
+        android:name="aldyputra.hackernews.fragment.StoryFragment"
+        android:label="Story"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@+id/nav_showstories"
+        android:name="aldyputra.hackernews.fragment.HomeFragment"
+        android:label="@string/menu_showstories"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_showstories_to_nav_story"
+            app:destination="@id/nav_story" />
+        <argument
+            android:name="arg_view_stories"
+            app:argType="integer"
+            android:defaultValue="4" />
+    </fragment>
+</navigation>

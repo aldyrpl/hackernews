@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">4dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_comment_vertical_margin">2dp</dimen>
+    <dimen name="list_item_vertical_margin">8dp</dimen>
+    <dimen name="list_item_horizontal_margin">8dp</dimen>
+    <dimen name="list_item_article_title_text_size">18sp</dimen>
+    <dimen name="list_item_article_title_favorite_size_text_size">25sp</dimen>
+    <dimen name="list_item_article_num_comments_text_size">16sp</dimen>
+    <dimen name="list_item_article_url_text_size">16sp</dimen>
+    <dimen name="list_item_article_user_text_size">16sp</dimen>
+    <dimen name="comment_level_start_left_margin">24dp</dimen>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/favorite_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingTop="5dp"
+        android:layout_height="90dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:text="Favorite Story"
+        android:textAlignment="center"
+            android:textStyle="bold"
+        android:textSize="@dimen/list_item_article_title_favorite_size_text_size"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/favorite_title"
+            android:layout_width="match_parent"
+            android:text="Favorite Story"
+            android:textAlignment="center"
+            android:textSize="@dimen/list_item_article_title_text_size"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/articles_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/articles_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/fragment_home_articles_list_item" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>
